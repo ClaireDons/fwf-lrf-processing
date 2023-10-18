@@ -23,5 +23,8 @@ Freshwater forcing scripts:
 
 `BasalMelt.py, FreshWaterForcing.py and DataVariablesForcing.py` are functions associated with the scripts. 
 
+The code is called at the bottom of `ece-esm.sh.tmpl` as fwf=4 and calls `fwfwrapper.sh`. 
+`fwfwrapper.sh` calls either `scripts/ThetaoDrivenFreshwaterForcing.py` for interactive fwf or `scripts/ThetaoDrivenFreshwaterForcing.py` for prescribed fwf. 
+
 ## Analysis
 This contains different notebooks to analyse freshwater output from runs quickly. `analysis/plot_fwf_compare_2_exps.ipynb` compares 2 different runs. 
