@@ -14,3 +14,4 @@ Freshwater coupling scripts
 `BasalMelt.py, FreshWaterForcing.py and DataVariablesForcing.py` are functions associated with the scripts. 
 
 ## Analysis
+This contains different notebooks to analyse freshwater output from runs quickly. `analysis/plot_fwf_compare_2_exps.ipynb` compares 2 different runs. 
