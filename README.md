@@ -5,7 +5,17 @@ This repository contains the pre-processing, coupling and initial analysis code 
 Create nc file of runoff masks for Antarctica
 
 ## Scripts
-Freshwater coupling scripts
+Inputs needed for running:
+- area file
+- a basal melt mask: created in pre-processing
+- a calving mask: created in pre-processing
+- basal melt depth1 & 2 files: this is the shallowest and deepest depths that the basal melt is calculated over. I do not know how these files are created. 
+- FriverDistributionMask_AIS_ORCA1.nc: I think this is no longer used and has now been replaced by separate basal melt and calving masks.
+- Baseline thetao file from control run
+- Total freshwater averaged over a certain period (to calculate anomalies).
+- Cumulative future freswater file for linear response function (this is an estimate from the ice sheet model)
+
+Freshwater forcing scripts:
 - `scripts/create_fwf_y1850.ipynb` creates fwf for 1850, I don't think this is used in the coupling process. 
 - `scripts/InitialiseFreshwaterForcing.py` Initialise freshwater forcing experiment by creating initial freshwater forcing file and depth distribution files. The initial freshwater file needs to be present before the run starts. 
 - `scripts/PrescribedFreshwaterForcing.py` Prescribed freshwater, used for doing the control experiment
