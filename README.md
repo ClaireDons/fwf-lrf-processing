@@ -8,7 +8,7 @@ Create nc file of runoff masks for Antarctica
 Freshwater coupling scripts
 - `scripts/create_fwf_y1850.ipynb` creates fwf for 1850, I don't think this is used in the coupling process. 
 - `scripts/InitialiseFreshwaterForcing.py` Initialise freshwater forcing experiment by creating initial freshwater forcing file and depth distribution files
-- `scripts/PrescribedFreshwaterForcing.py` Prescribed freshwater, for non-interactive experiments?
+- `scripts/PrescribedFreshwaterForcing.py` Prescribed freshwater, used for doing the control experiment
 - `scripts/ThetaoDrivenFreshwaterForcing.py` Compute Antarctic freshwater forcing anomalies from ocean subsurface temperature in 5 regions
 
 `BasalMelt.py, FreshWaterForcing.py and DataVariablesForcing.py` are functions associated with the scripts. 
